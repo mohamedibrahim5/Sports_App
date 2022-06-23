@@ -11,5 +11,10 @@ class HomeCollectionViewCell: UICollectionViewCell {
  
     @IBOutlet weak var imageview: UIImageView!
     @IBOutlet weak var textlabel: UILabel!
+    
+    func setValues(name:String,image:String){
+        self.textlabel.text = name
+        self.imageview.loadFrom(URLAddress: "image")
+    }
 
 }
